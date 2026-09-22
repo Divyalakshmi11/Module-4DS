@@ -35,40 +35,27 @@ To write a Python program to perform addition and division operations using a cl
 ### PROGRAM
 
 ```
-class calc():
-    def setvalues(self,a,b):
+#Name:DivyaLakshmi S
+#Regno:212223020007
+
+class Saveetha:
+    def setvalues(self, a, b):
         self.a = a
         self.b = b
-        
+
     def add(self):
-        self.a + self.b
-        
-    def mul(self):
-        self.a // self.b
-        
+        print("Addition:", self.a + self.b)
+
+    def div(self):
+        print("Division:", self.a / self.b)
+
 a = int(input())
 b = int(input())
 
-obj=a+b
-obc=a*b
-choice = 1
-
-while choice!=0:
-    choice = int(input())
-    if choice ==1:
-        print("Result: ",obj)
-        
-    elif choice == 2:
-        print("Result: ",obc)
-        
-    elif choice == 0:
-        print("Exiting!")
-        break
-    else:
-        print("Invalid choice")
-
-
-print()
+obj = Saveetha()
+obj.setvalues(a, b)
+obj.add()
+obj.div()
 
 
 ```
