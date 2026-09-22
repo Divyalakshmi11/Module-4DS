@@ -37,25 +37,54 @@ To write a Python program to perform addition and division operations using a cl
 ```
 #Name:DivyaLakshmi S
 #Regno:212223020007
+#Name:DivyaLakshmi S
+#Regno:212223020007
 
 class Saveetha:
+    def __init__(self):
+        self.a = 0
+        self.b = 0
+
     def setvalues(self, a, b):
         self.a = a
         self.b = b
 
     def add(self):
-        print("Addition:", self.a + self.b)
+        return self.a + self.b
 
     def div(self):
-        print("Division:", self.a / self.b)
+        if self.b == 0:
+            return "Division by zero is not possible"
+        return self.a / self.b
 
-a = int(input())
-b = int(input())
 
-obj = Saveetha()
-obj.setvalues(a, b)
-obj.add()
-obj.div()
+def main():
+    a = int(input())
+    b = int(input())
+
+    obj = Saveetha()
+    obj.setvalues(a, b)
+
+    while True:
+        choice = int(input())
+
+        if choice == 1:
+            print(obj.add())
+
+        elif choice == 2:
+            print(obj.div())
+
+        elif choice == 0:
+            print("Exiting!")
+            break
+
+        else:
+            print("Invalid choice")
+
+
+main()
+
+   
 
 
 ```
